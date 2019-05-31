@@ -1,8 +1,7 @@
 package com.unicom.gitgithub.controller;
 
 import com.unicom.gitgithub.entity.News;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +15,8 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "news")
 public class NewsController {
+
+    //@GetMapping @PostMapping @PutMapping @DeleteMapping
     @RequestMapping(value = "getAll")
     public List<News> getAll(){
         News news1 = new News(1,"aaa","ccccc");
